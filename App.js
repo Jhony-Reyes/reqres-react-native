@@ -2,20 +2,22 @@
  * @Author: Jhony Reyes
  * @Date: 2020-09-16 18:33:46
  * @Last Modified by: Jhony Reyes
- * @Last Modified time: 2020-09-17 02:45:32
+ * @Last Modified time: 2020-09-19 02:24:52
  */
 
 import 'react-native-gesture-handler';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Home, UserProfile } from './src/screens';
+import { StatusBar } from 'react-native';
+import { Home, UserProfile, LocalUsersList } from './src/screens';
 
 const MainStack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
+      <StatusBar barStyle="dark-content" backgroundColor="#FFF" />
       <MainStack.Navigator initialRouteName="Home">
         <MainStack.Screen
           name="Home"
@@ -32,7 +34,18 @@ export default function App() {
           name="UserProfile"
           component={UserProfile}
           options={{
-            title: 'Información de usuario',
+            title: 'Detalles',
+            headerTitleStyle: {
+              fontSize: 26,
+            },
+            headerTitleAlign: 'center',
+          }}
+        />
+        <MainStack.Screen
+          name="LocalUsersList"
+          component={LocalUsersList}
+          options={{
+            title: 'Usuarios guardados',
             headerTitleStyle: {
               fontSize: 26,
             },

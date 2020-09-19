@@ -2,14 +2,20 @@
  * @Author: Jhony Reyes
  * @Date: 2020-09-16 20:30:12
  * @Last Modified by: Jhony Reyes
- * @Last Modified time: 2020-09-17 02:53:17
+ * @Last Modified time: 2020-09-18 00:46:49
  */
 
 import React from 'react';
 import { Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-const CustomButton = ({ text, onPress, containerStyle }) => (
-  <TouchableOpacity style={[styles.container, containerStyle]} onPress={onPress}>
+const CustomButton = ({
+  text, onPress, containerStyle, disabled,
+}) => (
+  <TouchableOpacity
+    style={[styles.container, containerStyle]}
+    onPress={onPress}
+    disabled={disabled}
+  >
     <Text style={styles.text} numberOfLines={1}>{text}</Text>
   </TouchableOpacity>
 );

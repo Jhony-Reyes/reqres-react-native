@@ -2,7 +2,7 @@
  * @Author: Jhony Reyes
  * @Date: 2020-09-16 20:10:12
  * @Last Modified by: Jhony Reyes
- * @Last Modified time: 2020-09-19 02:19:03
+ * @Last Modified time: 2020-09-20 00:48:53
  */
 import React, { useState, useEffect, useRef } from 'react';
 import {
@@ -38,9 +38,15 @@ const Home = ({ navigation }) => {
               ...response.data.data]);
             setLoading(false);
             /* Se muestra mensaje de error para el segundo request */
-          }).catch(() => Alert.alert('Error', 'Lo sentimos, intente más tarde.'));
+          }).catch(() => {
+            Alert.alert('Error', 'Lo sentimos, intente más tarde.');
+            setLoading(false);
+          });
         /* Se muestra mensaje de error para el primer request */
-      }).catch(() => Alert.alert('Error', 'Lo sentimos, intente más tarde.'));
+      }).catch(() => {
+        Alert.alert('Error', 'Lo sentimos, intente más tarde.');
+        setLoading(false);
+      });
   }, []);
 
   const fetchUserById = () => {

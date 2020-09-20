@@ -3,7 +3,7 @@
 ![](https://www.programmableweb.com/sites/default/files/reqres.jpg)
 
 
-##### Aplicación móvil hecha con [Expo SDK](https://expo.io/, "Expo") versión 38.0.8 y [React Native](https://reactnative.dev/, "React Native") versión 0.62.2 :iphone: :heart_eyes:
+##### Aplicación móvil hecha con [Expo SDK](https://expo.io/ "Expo") versión 38.0.8 y [React Native](https://reactnative.dev/ "React Native") versión 0.62.2 :iphone: :heart_eyes:
 
 [![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-000.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/)
 
@@ -11,13 +11,13 @@
 
 ### Características
 
-- Encuentra usuarios de las primeras dos páginas de [Reqres](https://reqres.in/, "Reqres") API.
-- Encuentra usuarios por id de [Reqres](https://reqres.in/, "Reqres") API.
-- Guarda, consulta y elimina usuarios de [Reqres](https://reqres.in/, "Reqres") API en almacenamiento local.
+- Encuentra usuarios de las primeras dos páginas de [Reqres](https://reqres.in/ "Reqres") API.
+- Encuentra usuarios por id de [Reqres](https://reqres.in/ "Reqres") API.
+- Guarda, consulta y elimina usuarios de [Reqres](https://reqres.in/ "Reqres") API en almacenamiento local.
 
 ## Montar en ambiente local
 
-El proyecto está realizado con [Expo SDK](https://expo.io/, "Expo") quien provee herramientas para hacer una aplicación con react native de manera rápida. No se necesita una configuración muy extensa y provee un sandbox donde puedes visualizar tu aplicación en un emulador o en tu dispositivo físico.
+El proyecto está realizado con [Expo SDK](https://expo.io/ "Expo") quien provee herramientas para hacer una aplicación con react native de manera rápida. No se necesita una configuración muy extensa y provee un sandbox donde puedes visualizar tu aplicación en un emulador o en tu dispositivo físico.
 
 #### Pre requisitos
 Como prerequisitos se necesita tener instalado `node`, `git` y `expo-cli` manera global en tu computadora.
@@ -53,5 +53,5 @@ Para la funcionalidad de eliminar usuarios del almacenamiento local mediante el 
 
 #### Hecho por Jhony Reyes 
 ##### Visita mi [perfil](https://www.linkedin.com/in/jhonyreyes "Jhony Reyes")  :thumbsup:
-[![Jhony Reyes](https://s.gravatar.com/avatar/fa330127c849c8d7b0164315dde651de?s=80 "Jhony Reyes")](https://www.linkedin.com/in/jhonyreyes, "Jhony Reyes")
+[![Jhony Reyes](https://s.gravatar.com/avatar/fa330127c849c8d7b0164315dde651de?s=80 "Jhony Reyes")](https://www.linkedin.com/in/jhonyreyes "Jhony Reyes")
 

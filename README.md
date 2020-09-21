@@ -48,7 +48,7 @@ También consideré hacer todos los componentes con funciones y **React Hooks**.
 
 Instalé la versión más actual de `async-storage` para el almacenamiento local pero `expo` me mostró una advertencia en consola de que la versión compatible con él era una versión anterior a la instalada y que podría ser que no funcionara bien por lo que recomendaba cambiar `async-storage` a la versión anterior, decidí apegarme a su recomendación.
 
-Para la funcionalidad de eliminar usuarios del almacenamiento local mediante el gesto swipe había decidido utilizar el componente `swipeable` que ya provee `react-native-gesture-handler/Swipeable`, sin embargo cambié de opinión y decidí realizarlo con el `PanResponder`de `react-native` porque este último permite hacer el componente con más personalización. También decidí quitar el efecto `bounces` en el `FlatList` porque entorpece el funcionamiento del `PanResponder` en iOS`.
+Para la funcionalidad de eliminar usuarios del almacenamiento local mediante el gesto swipe había decidido utilizar el componente `swipeable` que ya provee `react-native-gesture-handler/Swipeable`, sin embargo cambié de opinión y decidí realizarlo con el `PanResponder`de `react-native` porque este último permite hacer el componente con más personalización. También decidí quitar el efecto `bounces` en el `FlatList` porque entorpece el funcionamiento del `PanResponder` en `iOS`.
 
 
 #### Hecho por Jhony Reyes 

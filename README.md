@@ -32,7 +32,7 @@ Después de haber instalado las dependencias ejecuta `npm start`, `yarn start` o
 #### Ejecución
 Este proyecto fue preparado para iOS y Android.
 
-Para visualizar la aplicación en dispositivo físico Android, es necesario escanear el código QR que aparece en consola con la aplicaión de expo, para visualizar la aplicación en iOS se debe escanear el código QR con la camára y abrirlo con la aplicación de expo.
+Para visualizar la aplicación en dispositivo físico Android, es necesario escanear el código QR que aparece en consola con la aplicación de expo, para visualizar la aplicación en iOS se debe escanear el código QR con la camára y abrirlo con la aplicación de expo.
 
 Para visualizar la aplicación en un emulador Android se necesita oprimir la tecla `a` en consola.
 Para visualizar la aplicación en un emulador iOS se necesita oprimir la tecla `i` en consola.
@@ -42,13 +42,13 @@ Decidí utilizar `expo` por su ser una herramienta de sencilla instalación y co
 
 Se utiliza react navigation que tiene soporte para navegación en Android y iOS. Utilicé axios para hacer las peticiones hacia el API por su manera de trabajar con promesas HTTP.
 
-En la pantalla de Home consideré hacer la petición hacia la primer página del API y si esta responde satisfactoriamente envía los datos obtenidos al estado del componente e intenta hacer la petición hacia la segunda página, si esta segunda falla al menos ya habrá en el estado los datos de la primer página del API, si ambas resuelven satisfactoriamente se muestran los resultados de las dos páginas, en cada de que alguna petición falle se le muestra un mensaje al usuario de que ocurrió un error.
+En la pantalla de Home consideré hacer la petición hacia la primer página del API y si esta responde satisfactoriamente envía los datos obtenidos al estado del componente e intenta hacer la petición hacia la segunda página, si esta segunda falla al menos ya habrá en el estado los datos de la primer página del API, si ambas resuelven satisfactoriamente se muestran los resultados de las dos páginas, en caso de que alguna petición falle se le muestra un mensaje al usuario de que ocurrió un error.
 
 También consideré hacer todos los componentes con funciones y **React Hooks**.
 
-Instalé la versión más actual de `async-storage`para el almacenamiento local pero `expo`me mostró una advertencia en consola de que la versión compatible con él era una versión anterior a la instalada y que podría ser que no funcionra bien por lo que recomendaba actualizar la versión anterior, decidí apegarme a su recomendación.
+Instalé la versión más actual de `async-storage` para el almacenamiento local pero `expo` me mostró una advertencia en consola de que la versión compatible con él era una versión anterior a la instalada y que podría ser que no funcionara bien por lo que recomendaba cambiar `async-storage` a la versión anterior, decidí apegarme a su recomendación.
 
-Para la funcionalidad de eliminar usuarios del almacenamiento local mediante el gesto swipe había decidido utilizar el componente `swipeable` que ya provee `react-native-gesture-handler/Swipeable`, sin embargo cambié de opinión y decidí realizarlo con el `PanResponder`de `react-native`porque este último de permitía hacer el componente con más personalización. También decidí quitar el efecto `bounces`en el `FlatList`porque entorpece el funcionamiento del `PanResponder`.
+Para la funcionalidad de eliminar usuarios del almacenamiento local mediante el gesto swipe había decidido utilizar el componente `swipeable` que ya provee `react-native-gesture-handler/Swipeable`, sin embargo cambié de opinión y decidí realizarlo con el `PanResponder`de `react-native` porque este último de permitía hacer el componente con más personalización. También decidí quitar el efecto `bounces` en el `FlatList` porque entorpece el funcionamiento del `PanResponder` en ìOS`.
 
 
 #### Hecho por Jhony Reyes 

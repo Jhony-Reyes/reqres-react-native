@@ -5,7 +5,7 @@
  * @Last Modified time: 2020-09-18 23:41:47
  */
 
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Alert } from 'react-native';
 
 export const saveData = async (storageKey, value) => {
